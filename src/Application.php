@@ -13,19 +13,11 @@ class Application extends BaseApplication
 {
     // internal method
 
-    /**
-     * {@inheritdoc}
-     * @see \Symfony\Component\Console\Application::getCommandName()
-     */
     protected function getCommandName(InputInterface $input)
     {
         return 'upload';
     }
 
-    /**
-     * {@inheritdoc}
-     * @see \Symfony\Component\Console\Application::getDefaultCommands()
-     */
     protected function getDefaultCommands()
     {
         // Keep the core default commands to have the HelpCommand
@@ -49,10 +41,6 @@ class Application extends BaseApplication
 
     // accessor
 
-    /**
-     * {@inheritdoc}
-     * @see \Symfony\Component\Console\Application::getDefinition()
-     */
     public function getDefinition()
     {
         $inputDefinition = parent::getDefinition();
